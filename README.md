@@ -1,11 +1,20 @@
 # CrawtaDesktop
 
-An old, recovered version of my music project website, built with **C#** and **.NET** (Avalonia UI).
+Old recovered version of my music site — rebuilt as a desktop app in **C#** / **.NET** with Avalonia.
 
-This repo is kept for archival purposes — it reflects an earlier iteration of the site, not the current live version.
+Just keeping this here for archive. It's not what's live anymore.
 
 ## Current version
 
-You can find the current repo here: [https://github.com/dylancrawte/crawta](https://github.com/dylancrawte/crawta)
+Repo: [github.com/dylancrawte/crawta](https://github.com/dylancrawte/crawta)
 
-And the live website here: [https://crawta.vercel.app/](https://crawta.vercel.app/)
+Live site: [crawta.vercel.app](https://crawta.vercel.app/)
+
+## How it's laid out
+
+- **`App.axaml.cs`** — starts the app and opens the main window
+- **`MainWindow.axaml`** — the UI (hero, tracks, player, newsletter, links)
+- **`MainWindow.axaml.cs`** — handles clicks, scrolling, updating the player on screen
+- **`AudioPlayerService.cs`** — plays audio via ffmpeg (`ffplay` / `ffprobe` — you'll need ffmpeg installed)
+
+`Program.cs` boots Avalonia → `App` loads `MainWindow` → track buttons call into `AudioPlayerService` for files in `Assets/audio/`. The `.axaml` has the layout; the `.cs` file hooks it up and keeps the progress bar / now playing text in sync.

@@ -10,7 +10,7 @@ Repo: [github.com/dylancrawte/crawta](https://github.com/dylancrawte/crawta)
 
 Live site: [crawta.vercel.app](https://crawta.vercel.app/)
 
-## How it's laid out
+## Architecture
 
 - **`App.axaml.cs`** — starts the app and opens the main window
 - **`MainWindow.axaml`** — the UI (hero, tracks, player, newsletter, links)

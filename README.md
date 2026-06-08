@@ -2,8 +2,6 @@
 
 Old recovered version of my music site — rebuilt as a desktop app in **C#** / **.NET** with Avalonia.
 
-Just keeping this here for archive. It's not what's live anymore.
-
 ## Current version
 
 Repo: [github.com/dylancrawte/crawta](https://github.com/dylancrawte/crawta)
